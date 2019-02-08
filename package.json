@@ -1,0 +1,14 @@
+{
+  "name": "mean_starter_kit",
+  "version": "0.0.1",
+  "description": "MEAN Stack Starter Kit",
+  "main": "server.js",
+  "author": "peachteaboba",
+  "dependencies": {
+    "bcrypt": "latest",
+    "body-parser": "latest",
+    "colors": "latest",
+    "express": "latest",
+    "mongoose": "latest"
+  }
+}

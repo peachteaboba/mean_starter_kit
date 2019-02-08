@@ -1,0 +1,21 @@
+{
+  "name": "Login_And_Registration",
+  "description": "Full Mean assignment",
+  "main": "server.js",
+  "authors": [
+    "peachteaboba"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-route": "^1.7.7",
+    "angular": "^1.7.7"
+  }
+}

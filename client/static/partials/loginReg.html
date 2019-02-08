@@ -1,0 +1,21 @@
+<h1>Login and Reg Page</h1>
+<h3>{{error}}</h3>
+<p>{{user}}</p>
+
+
+<div class="reg">
+  <h4>Register</h4>
+  <label>name: <input type="text" name="" value="" ng-model="reg.name"></label>
+  <label>email: <input type="text" name="" value="" ng-model="reg.email"></label>
+  <label>password: <input type="password" name="" value="" ng-model="reg.password"></label>
+  <label>confirm password: <input type="password" name="" value="" ng-model="reg.password_confirm"></label>
+  <button type="button" name="button" ng-click="regUser()">Register</button>
+</div>
+
+
+<div class="login">
+  <h4>Login</h4>
+  <label>email: <input type="text" name="" value="" ng-model="login.email"></label>
+  <label>password: <input type="password" name="" value="" ng-model="login.password"></label>
+  <button type="button" name="button" ng-click="loginUser()">Log In</button>
+</div>

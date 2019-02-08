@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <title>Login and Registration</title>
+    <link rel='stylesheet' href='static/css/index.css'>
+    <script type="text/javascript" src="angular/angular.min.js"></script>
+    <script type="text/javascript" src="angular-route/angular-route.min.js"></script>
+    <script>
+        // Create Angular App
+        var app = angular.module("myApp", ['ngRoute']);
+
+        // Configure Angular Routes
+        app.config(function($routeProvider) {
+            $routeProvider
+                .when('/',{
+                    templateUrl: 'static/partials/loginReg.html',
+                    controller:'loginController'
+                })
+                .when('/wall', {
+                    templateUrl: 'static/partials/wall.html',
+                    controller: 'wallController'
+                })
+                .otherwise({
+                    redirectTo: '/'
+                })
+        });
+    </script>
+    <script type="text/javascript" src="static/js/factories.js"></script>
+    <script type="text/javascript" src="static/js/controllers.js"></script>
+
+
+
+
+</head>
+
+<body>
+
+    <div ng-view=""></div>
+
+</body>
+</html>

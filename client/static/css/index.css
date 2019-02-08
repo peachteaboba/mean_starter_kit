@@ -1,0 +1,30 @@
+.reg{
+  display: inline-block;
+  vertical-align: top;
+  outline: 1px solid blue;
+  margin: 40px;
+  padding: 40px;
+  text-align: right;
+}
+
+label{
+  display: block;
+  margin-bottom: 15px;
+}
+
+input{
+  display: inline-block;
+}
+
+.login{
+  display: inline-block;
+  vertical-align: top;
+  outline: 1px solid green;
+  margin: 40px;
+  padding: 40px;
+  text-align: right;
+}
+
+h3{
+  color: red;
+}
