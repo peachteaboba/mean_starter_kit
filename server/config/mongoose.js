@@ -10,7 +10,7 @@ mongoose.Promise = global.Promise;
 var fs = require('fs');
 
 // Connect to the database
-mongoose.connect('mongodb://localhost/mean_starter_kit'); // * * * Change this to whatever database name you decide on
+mongoose.connect('mongodb://localhost/mean_starter_kit', { useNewUrlParser: true }); // * * * Change this to whatever database name you decide on
 
 // Specify the path to all of the models
 var models_path = __dirname + '/../models';
