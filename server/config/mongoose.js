@@ -1,8 +1,8 @@
 /**
- * Created by peachteaboba on 2/14/16.
+ * Created by peachteaboba on 02/08/19.
  */
 
-// Require mongoose
+// Require Mongoose
 var mongoose = require('mongoose');
 mongoose.Promise = global.Promise;
 
@@ -10,14 +10,14 @@ mongoose.Promise = global.Promise;
 var fs = require('fs');
 
 // Connect to the database
-mongoose.connect('mongodb://localhost/login_and_reg_wall_demo');
+mongoose.connect('mongodb://localhost/mean_starter_kit'); // * * * Change this to whatever database name you decide on
 
 // Specify the path to all of the models
 var models_path = __dirname + '/../models';
 
 // Read all of the files in the models_path and for each one check if it is a javascript file before requiring it
 fs.readdirSync(models_path).forEach(function(file) {
-    if(file.indexOf('.js') > 0) {
-        require(models_path + '/' + file);
-    }
+  if (file.indexOf('.js') > 0) {
+    require(models_path + '/' + file);
+  }
 });

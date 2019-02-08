@@ -1,6 +1,6 @@
 {
-  "name": "Login_And_Registration",
-  "description": "Full Mean assignment",
+  "name": "mean_starter_kit",
+  "description": "MEAN Stack Starter Kit",
   "main": "server.js",
   "authors": [
     "peachteaboba"
